@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import {
 	HeroSection,
@@ -15,12 +15,23 @@ import { Mail, Phone } from "@mui/icons-material";
 import { DefaultLayout } from "@/components/DefaultLayout";
 
 export default function TentangKamiPage() {
+	const large = useMediaQuery('(min-width:1024px)');
+	const medium = useMediaQuery('(min-width:768px)');
 	return (
 		<>
+			{" "}
 			<HeroSection>
 				<Box className="overlay">
-					<Typography variant="h2" fontWeight="bold" color="white">
-						Tentang Kami
+					<Typography
+						variant="h2"
+						fontWeight="bold"
+						color="white"
+						textAlign="center"
+						sx={{
+							fontSize: large ? "48px" : medium ? "40px" : "32px",
+						}}
+					>
+						Karier di PMG
 					</Typography>
 				</Box>
 			</HeroSection>
