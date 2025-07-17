@@ -62,6 +62,7 @@ const Hero = () => {
 						<Button
 							variant="outlined"
 							color="primary"
+							href="/tentang-kami"
 							sx={{
 								textTransform: "none",
 								padding: "12px 16px",
@@ -73,6 +74,7 @@ const Hero = () => {
 							Tentang Kami
 						</Button>
 						<Button
+						href="/karir"
 							variant="contained"
 							color="primary"
 							sx={{
